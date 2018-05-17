@@ -1,0 +1,72 @@
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #f2f2f2;
+}
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.full-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hash {
+  height: 720px;
+  width: 720px;
+}
+.board  {
+  width: 100%;
+  height: 100%;
+}
+.board .board-row {
+  width: 100%;
+  height: 33.3%;
+}
+.board .square {
+  display: inline-block;
+  width: 33.3%;
+  height: 100%;
+  border: 1px solid #000;
+  background: #ccc;
+  cursor: pointer;
+  vertical-align: middle;
+}
+.board .square:hover {
+  background: #aeaeae;
+}
+
+.board-row:first-child .square {
+  border-top: none;
+}
+.board-row:first-child .square:first-child {
+  border-left: none;
+}
+.board-row:first-child .square:last-child  {
+  border-right: none;
+}
+
+.board-row:nth-child(2) .square:first-child {
+    border-left: none;
+}
+.board-row:nth-child(2) .square:last-child {
+    border-right: none;
+}
+
+.board-row:last-child .square {
+  border-bottom: none;
+}
+.board-row:last-child .square:first-child {
+  border-left: none;
+}
+.board-row:last-child .square:last-child  {
+  border-right: none;
+}
