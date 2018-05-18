@@ -2,28 +2,22 @@ import React, { Component } from 'react'
 import 'bootstrap-css-only'
 import './App.css'
 
+import Board from './Board'
+
 class App extends Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      turn: 'X',
+    }
+
+  }
   render() {
     return (
       <div className="full-container">
         <div className="hash">
-          <div className="board">
-            <div className="board-row">
-              <div className="square"></div>
-              <div className="square"></div>
-              <div className="square"></div>
-            </div>
-            <div className="board-row">
-              <div className="square"></div>
-              <div className="square"></div>
-              <div className="square"></div>
-            </div>
-            <div className="board-row">
-              <div className="square"></div>
-              <div className="square"></div>
-              <div className="square"></div>
-            </div>
-          </div>
+          <Board />
         </div>
       </div>
     )
