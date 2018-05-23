@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 class Square extends Component {
     render() {
         return (
-            !this.props.mark && <div className='square'></div>
+            !this.props.mark && <div className='square' onClick={(a, b) => this.props.handleClickInSquare(this.props.a, this.props.b)}></div>
             ||
             this.props.mark === 'X' && <div className='square'>X</div>
             ||
